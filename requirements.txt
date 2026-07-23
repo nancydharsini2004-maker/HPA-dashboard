@@ -1,15 +1,7 @@
-HPA-dashboard
-
-📄 app.py
-📄 HPA_expression.parquet
-📄 requirements.txt
-
-📁 pages
-   📄 1_Gene_Explorer.py
-   📄 2_Normal_vs_Cancer.py
-   📄 3_Heatmap_Explorer.py
-   📄 4_Liver_Tissue_vs_Liver_Cancer.py
-   📄 5_Statistics_Dashboard.py
-
-📁 .streamlit
-   📄 config.toml
+text 
+streamlit
+pandas
+plotly
+matplotlib
+seaborn
+numpy
