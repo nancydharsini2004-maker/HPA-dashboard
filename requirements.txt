@@ -1,8 +1,4 @@
-text 
-
 streamlit
 pandas
 plotly
-matplotlib
-seaborn
-numpy
+pyarrow
