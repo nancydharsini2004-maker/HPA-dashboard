@@ -1,15 +1,14 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 
 # Page settings
 st.set_page_config(
-    page_title="Human Protein Atlas Gene Expression Analysis Dashboard",
+    page_title="Comparative Gene Expression Analysis Using Human Protein Atlas",
     page_icon="🧬",
     layout="wide"
 )
-
-
 # Load dataset
 @st.cache_data
 def load_data():
@@ -22,19 +21,12 @@ df = load_data()
 
 # Sidebar design
 
-st.sidebar.title("🧬 HPA Explorer")
+st.markdown("""
+### Comparative Analysis of Gene Expression Between Normal Human Tissue and Cancer Cell Lines
 
-st.sidebar.markdown(
-"""
-### Human Protein Atlas
-
-Explore gene expression patterns between:
-
-🟢 Normal human tissues
-
-🔴 Cancer cell lines
-"""
-)
+This dashboard enables interactive exploration and comparison of transcriptomic gene expression (nTPM)
+between normal tissues and tissue-specific cancer cell lines using Human Protein Atlas (HPA) data.
+""")
 
 
 st.sidebar.divider()
@@ -76,7 +68,7 @@ Navigation:
 # Main dashboard title
 
 st.title(
-    "🧬 Human Protein Atlas Gene Expression Analysis Dashboard"
+    "🧬 HPA Gene Expression Analysis Dashboard"
 )
 
 
